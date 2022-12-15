@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet calcul budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Calculer son budget</h1>
+<div id="boum">
+    <div class="contenue">
+        <h2>Entrée vos dépenses</h2>
+        <h3>Les dépenses fixes:</h3>
+        <div id="cout">
+            <div class="bloc">
+                <label for="loyer">loyer et charge:</label>
+                <input type="text" name="my-loyer" id="loyer">
+            </div>
+            <div class="bloc">
+                <label for="credits">rembousement de crédits:</label>
+                <input type="text" name="my-credits" id="credits">
+            </div>
+            <div class="bloc">
+                <label for="eau">eau/électricité/gaz:</label>
+                <input type="text" name="my-eau" id="eau">
+            </div>
+            <div class="bloc">
+                <label for="internet">téléphone-internet:</label>
+                <input type="text" name="my-internet" id="internet">
+            </div>
+            <div class="bloc">
+                <label for="habitation">assurance habitation:</label>
+                <input type="text" name="my-habitation" id="habitation">
+            </div>
+            <div class="bloc">
+                <label for="vehicule">assurance véhicules:</label>
+                <input type="text" name="my-vehicules" id="vehicule">
+            </div>
+            <div class="bloc">
+                <label for="sante">mutuelle santé:</label>
+                <input type="text" name="my-sante" id="sante">
+            </div>
+            <div class="bloc">
+                <label for="garde">frais de garde:</label>
+                <input type="text" name="my-garde" id="garde">
+            </div>
+            <div class="bloc">
+                <label for="revenu">impôts sur le revenu:</label>
+                <input type="text" name="my-revenu" id="revenu">
+            </div>
+            <div class="bloc">
+                <label for="locaux">impôts locaux:</label>
+                <input type="text" name="my-locaux" id="locaux">
+            </div>
+            <h3>Les dépenses courantes:</h3>
+            <div class="bloc">
+                <label for="courses">courses:</label>
+                <input type="text" name="my-courses" id="courses">
+            </div>
+            <div class="bloc">
+                <label for="essence">essence/frais de transport en commun:</label>
+                <input type="text" name="my-essence" id="essence">
+            </div>
+            <div class="bloc">
+                <label for="activites">activités sportives et culturelles:</label>
+                <input type="text" name="my-activites" id="activites">
+            </div>
+            <h3>Les dépenses occasionnelles:</h3>
+            <div class="bloc">
+                <label for="sorties">sorties:</label>
+                <input type="text" name="my-sorties" id="sorties">
+            </div>
+            <div class="bloc">
+                <label for="autre">autre dépense:</label>
+                <input type="text" name="my-autre" id="autre">
+            </div>
+        </div>
+        <div class="centrer">
+            <button id="depense">Ajouté des champs</button>
+        </div>
+    </div>
+    <div class="contenue" >
+        <h2>Entrée vos recettes</h2>
+        <div id="paye">
+            <div class="bloc">
+                <label for="salaire">salaire:</label>
+                <input type="text" name="my-salaire" id="salaire">
+            </div>
+            <div class="bloc">
+                <label for="aides">aides:</label>
+                <input type="text" name="my-aides" id="aides">
+            </div>
+            <div class="bloc">
+                <label for="rentes">rentes:</label>
+                <input type="text" name="my-rentes" id="rentes">
+            </div>
+            <div class="bloc">
+                <label for="autres">autre recette:</label>
+                <input type="text" name="my-autres" id="autres">
+            </div>
+        </div>
+        <div class="centrer">
+            <button id="recette">Ajouté des champs</button>
+        </div>
+    </div>
+    <div class="contenue">
+        <h2>Calcul de l'epargne</h2>
+        <div class="bloc">
+            <label for="epargne">epargne:</label>
+            <input type="text" name="my-epargne" id="epargne">
+        </div>
+        <div class="centrer">
+            <button id="valider">valider</button>
+        </div>
+    </div>
+    <div class="contenue">
+        <h2>Résultat</h2>
+        <div id="result"></div>
+        <div class="centrer">
+            <button id="reset">reset</button>
+        </div>
+    </div>
+</div>
+<script src="methode.js"></script>
+</body>
+</html>
